@@ -1,5 +1,4 @@
-const BASE = import.meta.env.PROD ? '/api' : 'http://localhost:5000/api';
-
+const BASE = import.meta.env.PROD ? 'https://taskallocation-mern.onrender.com/api' : 'http://localhost:5000/api';s
 export const token = {
   get: () => localStorage.getItem('token'),
   set: (t) => localStorage.setItem('token', t),
